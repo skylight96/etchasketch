@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h4 {
+    margin: 0
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: solid black 1px;
+    margin: 20px
+}
