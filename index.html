@@ -6,22 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Sketch</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <script src="main.js"></script>
 </head>
 
-<body>
-    <h1>Etch-a-Sketch</h1>
-    <div class="header">
-        <h4>Select Size</h4>
+<body class="flex justify-center items-center flex-col">
+    <div class="border-[#d01619] border-8">
+    <h1 class="text-black text-3xl text-center">Etch-a-Sketch</h1>
+    <div class="flex flex-row items-center justify-around w-[400px]">
+        <h4 class="m-0">Select Size</h4>
         <button id="popup">Select</button>
     </div>
     <p id="message"></p>
     <p id="draw"></p>
-    <div class="board"></div>
+    <div id="board" class="w-[500px] h-[500px] grid m-[20px]"></div>
     <div class="footer">
         <button  onclick="resetBoard()">Erase</button>
     </div>
+</div>
 </body>
 
 </html>

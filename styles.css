@@ -21,6 +21,8 @@ h4 {
     width: 500px;
     height: 500px;
     display: grid;
-    border: solid black 1px;
+    border: solid #d01619 50px;
+    border-bottom: solid #d01619 100px;
+    border-radius: 10px;
     margin: 20px
 }
