@@ -7,24 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Sketch</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        "sacramento" : ["cursive"]
+                    },
+                }
+            }
+        }</script>
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <script src="main.js"></script>
 </head>
 
-<body class="flex justify-center items-center flex-col">
-    <div class="border-[#d01619] border-8">
-    <h1 class="text-black text-3xl text-center">Etch-a-Sketch</h1>
-    <div class="flex flex-row items-center justify-around w-[400px]">
-        <h4 class="m-0">Select Size</h4>
-        <button id="popup">Select</button>
+<body class="flex justify-center items-center flex-col h-screen">
+    <div class="justify-self-center self-center border-[#d01619] border-2 rounded-xl bg-[#d01619]">
+        <div class="flex flex-row items-center justify-around w-[400px]">
+            <h4 class="m-0">Select Size</h4>
+            <button id="popup">Select</button>
+        </div>
+        <p id="message"></p>
+        <p id="draw"></p>
+        <div id="board" class="bg-gray-100 w-[500px] h-[500px] grid m-[20px]"></div>
+        <div id="footer" class="flex justify-around items-center p-[10px] -mt-5">
+            <button id="rgbButton" class="bg-white w-[75px] h-[75px] rounded-full" onclick="toggleRGB()">RGB</button>
+            <h1 class="font-sacramento text-[#d4af37] text-5xl text-center">Etch-a-Sketch</h1>
+            <button id="eraseButton" class="bg-white w-[75px] h-[75px] rounded-full"onclick="resetBoard()">Erase</button>
+        </div>
     </div>
-    <p id="message"></p>
-    <p id="draw"></p>
-    <div id="board" class="w-[500px] h-[500px] grid m-[20px]"></div>
-    <div class="footer">
-        <button  onclick="resetBoard()">Erase</button>
-    </div>
-</div>
 </body>
 
 </html>
