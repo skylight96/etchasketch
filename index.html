@@ -22,12 +22,11 @@
 
 <body class="flex justify-center items-center flex-col h-screen">
     <div class="justify-self-center self-center border-[#d01619] border-2 rounded-xl bg-[#d01619]">
-        <div class="flex flex-row items-center justify-around w-[400px]">
-            <h4 class="m-0">Select Size</h4>
-            <button id="popup">Select</button>
+        <div class="flex flex-col align-center items-center justify-center">
+            <button id="popup" class="m-5 ">Select Size</button>
         </div>
-        <p id="message"></p>
-        <p id="draw"></p>
+        <p id="message" class=" flex flex-col text-center"></p>
+        <p id="draw" class=" flex flex-col text-center"></p>
         <div id="board" class="bg-gray-100 w-[500px] h-[500px] grid m-[20px]"></div>
         <div id="footer" class="flex justify-around items-center p-[10px] -mt-5">
             <button id="rgbButton" class="bg-white w-[75px] h-[75px] rounded-full" onclick="toggleRGB()">RGB</button>
